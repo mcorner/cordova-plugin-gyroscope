@@ -6,7 +6,8 @@
     "id": "cordova-plugin-gyroscope",
     "platforms": [
       "android",
-      "ios"
+      "ios",
+      "browser"
     ]
   },
   "repository": {
