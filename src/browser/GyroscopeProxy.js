@@ -23,10 +23,10 @@
 function listener(event, success) {
     var orientation = {};
 
-    accel.x = event.orientation.beta;
-    accel.y = event.orientation.gama;
-    accel.z = event.orientation.alpha;
-    accel.timestamp = new Date().getTime();
+    orientation.x = event.orientation.beta;
+    orientation.y = event.orientation.gama;
+    orientation.z = event.orientation.alpha;
+    orientation.timestamp = new Date().getTime();
 
     success(orientation, { keepCallback : true });
 }
