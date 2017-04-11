@@ -138,7 +138,7 @@ public class GyroscopeListener extends CordovaPlugin implements SensorEventListe
         // If found, then register as listener
         if ((list != null) && (list.size() > 0)) {
           this.mSensor = list.get(0);
-          this.sensorManager.registerListener(this, this.mSensor, SensorManager.SENSOR_DELAY_UI);
+          this.sensorManager.registerListener(this, this.mSensor, SensorManager.SENSOR_DELAY_FASTEST);
           this.setStatus(GyroscopeListener.STARTING);
         } else {
           this.setStatus(GyroscopeListener.ERROR_FAILED_TO_START);

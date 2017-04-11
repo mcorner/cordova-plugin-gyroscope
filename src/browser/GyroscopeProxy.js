@@ -23,9 +23,9 @@
 function listener(event, success) {
     var orientation = {};
 
-    orientation.x = event.orientation.beta;
-    orientation.y = event.orientation.gama;
-    orientation.z = event.orientation.alpha;
+    orientation.x = event.beta;
+    orientation.y = event.gama;
+    orientation.z = event.alpha;
     orientation.timestamp = new Date().getTime();
 
     success(orientation, { keepCallback : true });

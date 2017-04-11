@@ -133,14 +133,6 @@ var gyroscope = {
             start();
         }
 
-        if (cordova.platformId === "browser" && !eventTimerId) {
-            // Start firing devicemotion events if we haven't already
-            var devicegyroEvent = new Event('devicegyro');
-            eventTimerId = window.setInterval(function() {
-                window.dispatchEvent(devicegyroEvent);
-            }, 200);
-        }
-
         return id;
     },
 
